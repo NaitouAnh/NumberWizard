@@ -43,7 +43,7 @@ public class NumberWizard : MonoBehaviour
 
     void NextGuess()
     {
-        guess = Random.Range(minNumber, maxNumber);
+        guess = (minNumber + maxNumber) / 2;
         m_Object.text = guess.ToString();
     }
 
